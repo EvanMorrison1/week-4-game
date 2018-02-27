@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Crystal Collector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Crystal Collector</title>
+    <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
 
-
 </head>
 <body>
-    <h1>Crystal Collector</h1>
+    <h1>Carbiner Collector</h1>
 
     <div class = "instructions">
         <p>
-        You will be give a random number at the start of the game.<br>
-        There are four crystals below. By clicking on a crystal you will add a specific amount of point to your total score.<br>
-        You win the game by matching your total score to the random number, you lose the game if your total score goes about the random number.<br>
-        The value of each crystal is hidden from you until you click on it.<br>
-        Each time the game starts, the game will change the values of each crystal.<br>
+        Scenario: You are going on a climbing trip and need to bring a certain number of carbiners. The game will give you a number of carbiners, your job is to match the number. <br>
+        There are four carbiners below. By clicking on a carbiner you will add a specific amount of points to your total score.<br>
+        You win the game by matching your total score to the random number, you lose the game if your total score goes over the random number.<br>
+        The value of each carbiner is hidden from you until you click on it.<br>
+        Each time the game starts, the game will change the values of each carbiner.<br>
         </p>
+        </div>
+        
     </div>
-
-    <div class = "randomNumber">
-
-    </div>
+        <div class="numberToMatch">
+            <h2>Number To Get:
+                <span id= "randomNumber"></span>
+            </h2>
+        </div>
 
     <div class = "scoreBoard">
-        <p>
-            Wins:
-            <br>
-            Losses:
-        </p>
+        <h2>Wins:
+			<span id= "numberWins"></span>
+			</br>
+			Losses: 
+			<span id= "numberLosses"></span>
+		</h2>
     </div>
 
     <div class = "crystals">
-
+        <img src="assets/images/carbiner5.jpg" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/carbiner6.jpg" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/carbiner3.jpeg" class=gemImage id= "three" alt="Red Gem">
+		<img src="assets/images/carbiner4.jpeg" class=gemImage id= "four" alt="Yellow Gem">
 
     </div>
 
-    <div class = "yourScore">
-        <h2>Your score is:
-            <div class = "userTotal"></div>
-        </h2>
+    <div class="userTotal">
+		<h2>Your total score is:
+			<span id="finalTotal"></span>
+		</h2> 
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
 </body>
 
 </html>
